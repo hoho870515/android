@@ -8,8 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 public class SearchActivity extends AppCompatActivity {
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +32,23 @@ public class SearchActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-    }
 
+        Spinner spinner = (Spinner) findViewById(R.id.spin);
+        //建立一個ArrayAdapter物件，並放置下拉選單的內容
+        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,new String[]{"台中市","彰化縣","南投縣"});
+        //設定下拉選單的樣式
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        //設定項目被選取之後的動作
+        spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
+            public void onItemSelected(AdapterView adapterView, View view, int position, long id){
+                Toast.makeText(SearchActivity.this, "您選擇"+adapterView.getSelectedItem().toString(), Toast.LENGTH_LONG).show();
+            }
+            public void onNothingSelected(AdapterView arg0) {
+                Toast.makeText(SearchActivity.this, "您沒有選擇任何項目", Toast.LENGTH_LONG).show();
+            }
+        });
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
