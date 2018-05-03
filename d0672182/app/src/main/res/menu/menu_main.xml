@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.myapplication2.MainActivity">
+    <item android:id="@+id/action_search"
+        app:showAsAction="never"
+        android:title="搜尋"/>
+    <item android:id="@+id/action_map"
+        app:showAsAction="never"
+        android:title="地圖"/>
+    <item android:id="@+id/action_memo"
+        app:showAsAction="never"
+        android:title="備忘錄"/>
+    <item android:id="@+id/action_clock"
+        app:showAsAction="never"
+        android:title="時鐘"/>
+
+</menu>
