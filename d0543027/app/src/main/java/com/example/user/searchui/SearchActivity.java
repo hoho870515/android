@@ -38,17 +38,41 @@ public class SearchActivity extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spin);
         //建立一個ArrayAdapter物件，並放置下拉選單的內容
-        final ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,new String[]{"","台中市","彰化縣","南投縣"});
+        String[] str = {"","台中市","彰化縣","南投縣","雲林縣","苗栗縣"};
+        final ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,str);
         //設定下拉選單的樣式
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         //設定項目被選取之後的動作
         spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
             public void onItemSelected(AdapterView adapterView, View view, int position, long id){
-                if(adapterView.getSelectedItem().toString().equals("台中市")){
-                    Intent i = new Intent();
-                    i.setClass(SearchActivity.this, ListActivity.class);
-                    startActivity(i);
+                switch(position){
+                    case 1:
+                        Intent i = new Intent();
+                        i.setClass(SearchActivity.this, ListActivity.class);
+                        startActivity(i);
+                        break;
+                    case 2:
+                        Intent i1 = new Intent();
+                        i1.setClass(SearchActivity.this, ListActivity.class);
+                        startActivity(i1);
+                        break;
+                    case 3:
+                        Intent i2 = new Intent();
+                        i2.setClass(SearchActivity.this, ListActivity.class);
+                        startActivity(i2);
+                        break;
+                    case 4:
+                        Intent i3 = new Intent();
+                        i3.setClass(SearchActivity.this, ListActivity.class);
+                        startActivity(i3);
+                        break;
+                    case 5:
+                        Intent i4 = new Intent();
+                        i4.setClass(SearchActivity.this, ListActivity.class);
+                        startActivity(i4);
+                        break;
+
                 }
 
             }
