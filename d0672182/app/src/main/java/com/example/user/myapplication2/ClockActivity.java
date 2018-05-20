@@ -1,7 +1,9 @@
 package com.example.user.myapplication2;
 
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.AnalogClock;
 import android.widget.DigitalClock;
 
 public class ClockActivity extends AppCompatActivity {
@@ -13,5 +15,6 @@ public class ClockActivity extends AppCompatActivity {
         setContentView(R.layout.clock);
 
         DigitalClock txtClock = (DigitalClock) findViewById(R.id.txtClock);
+        AnalogClock alclock = (AnalogClock) findViewById(R.id.alClock);
     }
 }
