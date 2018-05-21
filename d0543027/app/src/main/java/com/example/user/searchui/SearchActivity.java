@@ -41,8 +41,8 @@ public class SearchActivity extends ListActivity {
         Spinner spinner = (Spinner) findViewById(R.id.spin);
         //建立一個ArrayAdapter物件，並放置下拉選單的內容
 
-        String[] str = {"","台中市","彰化縣","南投縣","雲林縣","苗栗縣"};
-        final ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,str);
+        final String[] str = {"","台中市","彰化縣","南投縣","雲林縣","苗栗縣"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,str);
         //設定下拉選單的樣式
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -58,7 +58,7 @@ public class SearchActivity extends ListActivity {
                         clear.add(" ");
                         clear.add(" ");
                         clear.add(" ");
-                        ArrayAdapter arrayAdapterClear = new ArrayAdapter(SearchActivity.this,
+                        ArrayAdapter<String> arrayAdapterClear = new ArrayAdapter<String>(SearchActivity.this,
                                 android.R.layout.simple_expandable_list_item_1,clear);
                         listview.setAdapter(arrayAdapterClear);
                         break;
@@ -69,7 +69,7 @@ public class SearchActivity extends ListActivity {
                         str.add("搜尋結果3");
                         str.add("搜尋結果4");
                         str.add("搜尋結果5");
-                        ArrayAdapter arrayAdapter = new ArrayAdapter(SearchActivity.this,android.R.layout.simple_list_item_1, str);
+                        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str);
                         listview.setAdapter(arrayAdapter);
                         break;
                     case 2:
@@ -79,7 +79,7 @@ public class SearchActivity extends ListActivity {
                         str1.add("搜尋結果3");
                         str1.add("搜尋結果4");
                         str1.add("搜尋結果5");
-                        ArrayAdapter arrayAdapter1 = new ArrayAdapter(SearchActivity.this,android.R.layout.simple_list_item_1, str1);
+                        ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str1);
                         listview.setAdapter(arrayAdapter1);
                         break;
                     case 3:
@@ -89,7 +89,7 @@ public class SearchActivity extends ListActivity {
                         str2.add("搜尋結果3");
                         str2.add("搜尋結果4");
                         str2.add("搜尋結果5");
-                        ArrayAdapter arrayAdapter2 = new ArrayAdapter(SearchActivity.this,android.R.layout.simple_list_item_1, str2);
+                        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str2);
                         listview.setAdapter(arrayAdapter2);
                         break;
                     case 4:
@@ -99,7 +99,7 @@ public class SearchActivity extends ListActivity {
                         str3.add("搜尋結果3");
                         str3.add("搜尋結果4");
                         str3.add("搜尋結果5");
-                        ArrayAdapter arrayAdapter3 = new ArrayAdapter(SearchActivity.this,android.R.layout.simple_list_item_1, str3);
+                        ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str3);
                         listview.setAdapter(arrayAdapter3);
                         break;
                     case 5:
@@ -109,7 +109,7 @@ public class SearchActivity extends ListActivity {
                         str4.add("搜尋結果3");
                         str4.add("搜尋結果4");
                         str4.add("搜尋結果5");
-                        ArrayAdapter arrayAdapter4 = new ArrayAdapter(SearchActivity.this,android.R.layout.simple_list_item_1, str4);
+                        ArrayAdapter<String> arrayAdapter4 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str4);
                         listview.setAdapter(arrayAdapter4);
                         break;
                 }
