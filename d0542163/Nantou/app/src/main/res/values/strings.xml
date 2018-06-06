@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nantou</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_a">a</string>
+    <string name="title_activity_b">b</string>
+    <string name="title_activity_c">c</string>
+</resources>
