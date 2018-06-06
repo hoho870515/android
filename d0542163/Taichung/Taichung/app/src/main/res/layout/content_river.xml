@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pc235.taichung.river"
+    tools:showIn="@layout/activity_river">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/river" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="川水質改善與景觀營造工程，已於日前完工，成為台中市新興景點之一。 柳川是一條會呼吸的河川，拓寬兩側護岸改為緩坡，有助排水及透水，並藉由滲透及蒸發，減輕暴雨逕流對排水系統的負荷，河岸下方設置水撲滿吸收水份，儲水回抽作為澆灌使用，河道下方則設置滲透性排水管（HDPE管），在枯水期與豐水期之間調整水源，創造出如同海綿般吸水的彈性空間。 而為兼顧水質及生態，柳川水源經過上游汙水截流送至中華水質淨化場處理後，現在已有顯著改善，由原先嚴重汙染降為輕度汙染；河岸旁除移植37株喬木，同時也新植38株水柳保留柳川風情，加上流蘇、台灣欒樹及光臘樹等台灣在地原生植栽共159株喬木，讓柳川河道一年四季皆有不同的景色。" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="回搜尋" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="類似結果" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

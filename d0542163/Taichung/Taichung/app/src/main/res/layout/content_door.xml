@@ -20,5 +20,23 @@
             android:layout_width="match_parent"
             android:layout_height="193dp"
             app:srcCompat="@drawable/door" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="月恆門位於東勢區和興庄西方，前臨大甲溪，造型規模與「日昇門」相仿，上有「後倚癸方其悉合；前朝丁向總咸宜。」藍字對聯，在天干中，癸方是北方，而丁向是南向，亦可看出月恆門是座北朝南的。月恆門正上方左右兩邊各有一個圓形槍眼，對聯下方有兩個方形槍孔，在防禦上有很大用處。日昇、月恆門樓與下城里的開庄史息息相關，依現存史料記載，下城里開庄起於清道光五年，庄民進行墾荒，以石牆種竹為界，並分股築屋居住，彼此合力務農為主，號名「和興庄」。戴萬生之亂後，和興庄民為防外犯，即建立東西兩門，上有槍洞，以備迎戰，並於村莊周圍栽種莿竹，以防搶劫。民國88年921中部大地震，月恆門遭受震損，文化局進行登錄歷史建築，並修復保存。" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="回檢索" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="類似結果" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_bridge">Bridge</string>
     <string name="title_activity_door">door</string>
+    <string name="title_activity_river">river</string>
+    <string name="title_activity_npc">npc</string>
 </resources>

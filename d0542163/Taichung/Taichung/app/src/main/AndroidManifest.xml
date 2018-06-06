@@ -26,6 +26,14 @@
         <activity
             android:name=".door"
             android:label="@string/title_activity_door"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".river"
+            android:label="@string/title_activity_river"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".npc"
+            android:label="@string/title_activity_npc"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
