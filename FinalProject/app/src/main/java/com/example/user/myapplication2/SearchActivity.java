@@ -1,6 +1,7 @@
 package com.example.user.myapplication2;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -83,6 +84,18 @@ public class SearchActivity extends ListActivity{
                         str2.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str2);
                         listview.setAdapter(arrayAdapter2);
+                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,A.class);
+                                        startActivity(intent);
+                                        break;
+                                }
+                            }
+                        });
                         break;
                     case 4:
                         ArrayList<String> str3 = new ArrayList<String>();
