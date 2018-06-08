@@ -75,6 +75,10 @@
         <activity
             android:name=".chunghua_d"
             android:label="@string/title_activity_chunghua_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chunghua_e"
+            android:label="@string/title_activity_chunghua_e"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
