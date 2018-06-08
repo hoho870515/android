@@ -59,10 +59,31 @@ public class SearchActivity extends ListActivity{
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 switch (position){
+
                                     case 0:
                                         Intent intent = new Intent();
                                         intent.setClass(SearchActivity.this,taichung_a.class);
                                         startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,taichung_b.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this,taichung_c.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this,taichung_d.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this,taichung_e.class);
+                                        startActivity(intent4);
                                         break;
                                 }
                             }
@@ -78,6 +99,7 @@ public class SearchActivity extends ListActivity{
                         str.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str);
                         listview.setAdapter(arrayAdapter);
+
                         break;
                     case 2:
                         ArrayList<String> str1 = new ArrayList<String>();
