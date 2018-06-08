@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".chunghua_c"
+    tools:showIn="@layout/activity_chunghua_c">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chunghua_c" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="東螺溪是濁水溪的三大支流之一，俗稱「舊濁水溪」，以溪湖糖廠為起點，沿著糖廠小火車鐵道延著舊濁水溪溪畔到田尾公路花園，沿路可以看到永靖、田尾種滿花卉的田園，也可以欣賞到傳統農家三合院，春天時沿路的木棉花盛開，讓人有騎乘在一片橘海中的感覺。東螺溪是濁水溪的三大支流之一，俗稱「舊濁水溪」，以溪湖糖廠為起點，沿著糖廠小火車鐵道延著舊濁水溪溪畔到田尾公路花園，沿路可以看到永靖、田尾種滿花卉的田園，也可以欣賞到傳統農家三合院，春天時沿路的木棉花盛開，讓人有騎乘在一片橘海中的感覺。" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

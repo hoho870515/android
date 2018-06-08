@@ -61,7 +61,21 @@
             android:label="@string/title_activity_nantou_d" />
         <activity
             android:name=".nantou_e"
-            android:label="@string/title_activity_nantou_e"></activity>
+            android:label="@string/title_activity_nantou_e" />
+        <activity
+            android:name=".chunghua_a"
+            android:label="@string/title_activity_chunghua_a" />
+        <activity
+            android:name=".chunghua_b"
+            android:label="@string/title_activity_chunghua_b" />
+        <activity
+            android:name=".chunghua_c"
+            android:label="@string/title_activity_chunghua_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chunghua_d"
+            android:label="@string/title_activity_chunghua_d"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
