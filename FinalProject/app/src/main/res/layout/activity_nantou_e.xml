@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nantou_e">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="624dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nantou_e" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="龍德廟俗稱大道公廟或老爺公廟，是草屯北投埔林姓祖先由大陸來台定居嘉義梅山鄉，康熙年間移居草屯月眉厝一帶開墾，建小祠於貓羅溪旁八卦山麓。但後來因發生水災被毀，於是遷建於現在廟前漬間巷口舊，乾隆58年又遷建於現址。後來經多次重修且遭逢日治時期昭和10年（1935）戊戌大水災、民國48年八七及49年八一水災，最後一次為民國82年重修完成，目前大致保持乾隆年間風貌。 　　龍德廟為單進三開間式設計之傳統簡樸廟宇建築，寺廟內奉祀主神保生大帝外，配祀關聖帝君、觀世音菩薩、天上聖母、西秦王爺等神尊，民國九十八年募資新建牌樓。四十八年「八七」洪災，貓羅溪自溪州決口，全庄六百戶左右房屋被沖毀，龍德廟亦難以倖免，只存中殿、拜亭。當時百名庄民躲進中殿神桌上及攀上廟前之古榕樹幸免於災禍，成為庄民之救命恩人同列為古蹟。 　　目前廟內保存有咸豐元年（1851年）之「真元壽世」匾，以及同治三年冬十二月（1864年）之「刑期無刑」匾。另外，還保存有同治十二年（1873年）打造之石香爐，上鐫有「保生大帝」「龍德廟」，以及龍德廟" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

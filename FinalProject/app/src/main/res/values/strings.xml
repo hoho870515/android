@@ -8,4 +8,9 @@
     <string name="title_activity_taichung_c">taichung_c</string>
     <string name="title_activity_taichung_d">taichung_d</string>
     <string name="title_activity_taichung_e">taichung_e</string>
+    <string name="title_activity_nantou_a">nantou_a</string>
+    <string name="title_activity_nantou_b">nantou_b</string>
+    <string name="title_activity_nantou_c">nantou_c</string>
+    <string name="title_activity_nantou_d">nantou_d</string>
+    <string name="title_activity_nantou_e">nantou_e</string>
 </resources>

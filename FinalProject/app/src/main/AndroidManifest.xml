@@ -45,7 +45,23 @@
         <activity
             android:name=".taichung_e"
             android:label="@string/title_activity_taichung_e"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nantou_a"
+            android:label="@string/title_activity_nantou_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nantou_b"
+            android:label="@string/title_activity_nantou_b" />
+        <activity
+            android:name=".nantou_c"
+            android:label="@string/title_activity_nantou_c" />
+        <activity
+            android:name=".nantou_d"
+            android:label="@string/title_activity_nantou_d" />
+        <activity
+            android:name=".nantou_e"
+            android:label="@string/title_activity_nantou_e"></activity>
     </application>
 
 </manifest>
