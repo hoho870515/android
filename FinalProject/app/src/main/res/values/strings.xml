@@ -4,4 +4,6 @@
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_a">A</string>
     <string name="title_activity_taichung_a">Taichung_a</string>
+    <string name="title_activity_taichung_b">taichung_b</string>
+    <string name="title_activity_taichung_c">taichung_c</string>
 </resources>

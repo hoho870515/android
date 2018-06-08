@@ -5,7 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Taichung_a"
+    tools:context=".taichung_a"
     tools:showIn="@layout/activity_taichung_a">
 
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/taichung_a" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="位於東勢區的金門橋，原本只有潺潺的流水劃過兩岸，兩岸居民互動必須靠涉水而過，而為了老幼婦孺的安全，建橋於昭和十五年(西元1940年)，因當時太平洋戰爭爆發，徵調走所有的水泥，使得當地人民只能利用糯米、石灰加上黑糖等材料膠和而成，因此富有彈性的特質，即使遇921地震，而都無任何損傷，特殊的建造工法及造形，具有相當保存的價值，尤其是對於地方上居民的安全性更是功不可沒。" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

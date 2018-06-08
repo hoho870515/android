@@ -27,8 +27,16 @@
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Taichung_a"
+            android:name=".taichung_b"
+            android:label="@string/title_activity_taichung_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_a"
             android:label="@string/title_activity_taichung_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_c"
+            android:label="@string/title_activity_taichung_c"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

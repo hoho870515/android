@@ -61,7 +61,7 @@ public class SearchActivity extends ListActivity{
                                 switch (position){
                                     case 0:
                                         Intent intent = new Intent();
-                                        intent.setClass(SearchActivity.this,A.class);
+                                        intent.setClass(SearchActivity.this,taichung_a.class);
                                         startActivity(intent);
                                         break;
                                 }
