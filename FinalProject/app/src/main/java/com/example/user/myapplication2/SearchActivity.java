@@ -53,7 +53,21 @@ public class SearchActivity extends ListActivity{
                         clear.add(" ");
                         ArrayAdapter<String> arrayAdapterClear = new ArrayAdapter<String>(SearchActivity.this,
                                 android.R.layout.simple_expandable_list_item_1,clear);
+
                         listview.setAdapter(arrayAdapterClear);
+                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,A.class);
+                                        startActivity(intent);
+                                        break;
+                                }
+                            }
+                        });
+
                         break;
                     case 1:
                         ArrayList<String> str = new ArrayList<String>();
@@ -84,19 +98,7 @@ public class SearchActivity extends ListActivity{
                         str2.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str2);
                         listview.setAdapter(arrayAdapter2);
-                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                switch (position){
-                                    case 0:
-                                        Intent intent = new Intent();
-                                        intent.setClass(SearchActivity.this,A.class);
-                                        startActivity(intent);
-                                        break;
-                                }
-                            }
-                        });
-                        break;
+
                     case 4:
                         ArrayList<String> str3 = new ArrayList<String>();
                         str3.add("搜尋結果1");

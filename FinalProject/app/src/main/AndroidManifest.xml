@@ -27,8 +27,8 @@
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".A"
-            android:label="@string/title_activity_a"
+            android:name=".Taichung_a"
+            android:label="@string/title_activity_taichung_a"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
