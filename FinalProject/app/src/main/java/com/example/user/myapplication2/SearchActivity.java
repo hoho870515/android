@@ -111,6 +111,39 @@ public class SearchActivity extends ListActivity{
                         str1.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str1);
                         listview.setAdapter(arrayAdapter1);
+                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,chunghua_a.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,chunghua_b.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this,chunghua_c.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this,chunghua_d.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this,chunghua_e.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                            }
+                        });
 
                         break;
                     case 3:
@@ -128,34 +161,34 @@ public class SearchActivity extends ListActivity{
                                 switch (position){
 
                                     case 0:
-                                        Intent intent3 = new Intent();
-                                        intent3.setClass(SearchActivity.this,nantou_a.class);
-                                        startActivity(intent3);
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,nantou_a.class);
+                                        startActivity(intent);
                                         break;
                                     case 1:
-                                        Intent intent31 = new Intent();
-                                        intent31.setClass(SearchActivity.this,nantou_b.class);
-                                        startActivity(intent31);
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,nantou_b.class);
+                                        startActivity(intent1);
                                         break;
                                     case 2:
-                                        Intent intent32 = new Intent();
-                                        intent32.setClass(SearchActivity.this,nantou_c.class);
-                                        startActivity(intent32);
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this,nantou_c.class);
+                                        startActivity(intent2);
                                         break;
                                     case 3:
-                                        Intent intent33 = new Intent();
-                                        intent33.setClass(SearchActivity.this,nantou_d.class);
-                                        startActivity(intent33);
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this,nantou_d.class);
+                                        startActivity(intent3);
                                         break;
                                     case 4:
-                                        Intent intent34 = new Intent();
-                                        intent34.setClass(SearchActivity.this,nantou_e.class);
-                                        startActivity(intent34);
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this,nantou_e.class);
+                                        startActivity(intent4);
                                         break;
                                 }
                             }
                         });
-
+                        break;
                     case 4:
                         ArrayList<String> str3 = new ArrayList<String>();
                         str3.add("搜尋結果1");
@@ -165,6 +198,39 @@ public class SearchActivity extends ListActivity{
                         str3.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str3);
                         listview.setAdapter(arrayAdapter3);
+                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,yuniln_a.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,yunlin_b.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this,yunlin_c.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this,yunlin_d.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this,yunlin_e.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                            }
+                        });
                         break;
                     case 5:
                         ArrayList<String> str4 = new ArrayList<String>();
@@ -175,6 +241,39 @@ public class SearchActivity extends ListActivity{
                         str4.add("搜尋結果5");
                         ArrayAdapter<String> arrayAdapter4 = new ArrayAdapter<String>(SearchActivity.this,android.R.layout.simple_list_item_1, str4);
                         listview.setAdapter(arrayAdapter4);
+                        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        intent.setClass(SearchActivity.this,miaoli_a.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,miaoli_b.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this,miaoli_c.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this,miaoli_d.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this,miaoli_e.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                            }
+                        });
                         break;
                 }
 
