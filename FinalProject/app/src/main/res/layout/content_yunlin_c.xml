@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".yunlin_c"
+    tools:showIn="@layout/activity_yunlin_c">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/yunlin_c" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="『幸福~很簡單~從睡眠開始』，豐本公司以醫療及 軍用級生產經驗為自創品牌緹諾時尚生館奠定基礎 ，館內設計裝置藝術的「希望之樹」、「聚酯纖維 牆」、「枕頭形象牆」、「彩虹隧道」及海陸空三 軍軍用展示等，從工廠製程參觀區將床墊、棉被、 枕頭等各式常見寢具製程一次了解，提供DIY體驗 學、商品展售館、會議研習場地、品茶喝咖啡、漆 彈定靶遊戲、漆彈生存競技場等多樣化休閒活動， 歡迎蒞臨見證用台灣精神寫下緹諾寢具產業的新里 程。" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

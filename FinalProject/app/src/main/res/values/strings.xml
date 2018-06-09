@@ -18,4 +18,9 @@
     <string name="title_activity_chunghua_c">chunghua_c</string>
     <string name="title_activity_chunghua_d">chunghua_d</string>
     <string name="title_activity_chunghua_e">chunghua_e</string>
+    <string name="title_activity_yuniln_a">yuniln_a</string>
+    <string name="title_activity_yunlin_b">yunlin_b</string>
+    <string name="title_activity_yunlin_c">yunlin_c</string>
+    <string name="title_activity_yunlin_d">yunlin_d</string>
+    <string name="title_activity_yunlin_e">yunlin_e</string>
 </resources>

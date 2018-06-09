@@ -79,6 +79,26 @@
         <activity
             android:name=".chunghua_e"
             android:label="@string/title_activity_chunghua_e"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yuniln_a"
+            android:label="@string/title_activity_yuniln_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_b"
+            android:label="@string/title_activity_yunlin_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_c"
+            android:label="@string/title_activity_yunlin_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_d"
+            android:label="@string/title_activity_yunlin_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_e"
+            android:label="@string/title_activity_yunlin_e"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

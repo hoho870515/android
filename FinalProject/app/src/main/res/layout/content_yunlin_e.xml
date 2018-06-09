@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".yunlin_e"
+    tools:showIn="@layout/activity_yunlin_e">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/yunlin_e" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="丸莊成立於西元1909年，發跡於台灣傳統醬油的故 鄉─雲林縣西螺鎮，丸莊醬油為歷史悠久的百年醬 油品牌，創始人莊清臨先生從小與醬類製品為伍， 傳承古法釀造工法，配合西螺地區獨特的水質與氣 候，釀出口感甘醇的黑豆蔭油。也成為米與西瓜之 外，最具有代表性的西螺名產。 丸莊除了堅持傳統之外也積極的尋求創新，把傳統 產業經過重新包裝，改造老舊廠房，讓客人透過導 覽及親自製作DIY，更深入的了解整個黑豆蔭油的製 程，也能更加認識這項傳統產業，觀光工廠於2008 年正式開放，成為雲林縣第一家觀光工廠。" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
