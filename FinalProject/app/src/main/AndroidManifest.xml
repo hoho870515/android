@@ -115,6 +115,10 @@
         <activity
             android:name=".miaoli_d"
             android:label="@string/title_activity_miaoli_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_e"
+            android:label="@string/title_activity_miaoli_e"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
