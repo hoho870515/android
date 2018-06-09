@@ -23,4 +23,8 @@
     <string name="title_activity_yunlin_c">yunlin_c</string>
     <string name="title_activity_yunlin_d">yunlin_d</string>
     <string name="title_activity_yunlin_e">yunlin_e</string>
+    <string name="title_activity_miaoli_a">miaoli_a</string>
+    <string name="title_activity_miaoli_b">miaoli_b</string>
+    <string name="title_activity_miaoli_c">miaoli_c</string>
+    <string name="title_activity_miaoli_d">miaoli_d</string>
 </resources>

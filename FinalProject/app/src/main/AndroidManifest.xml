@@ -99,6 +99,22 @@
         <activity
             android:name=".yunlin_e"
             android:label="@string/title_activity_yunlin_e"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_a"
+            android:label="@string/title_activity_miaoli_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_b"
+            android:label="@string/title_activity_miaoli_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_c"
+            android:label="@string/title_activity_miaoli_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_d"
+            android:label="@string/title_activity_miaoli_d"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

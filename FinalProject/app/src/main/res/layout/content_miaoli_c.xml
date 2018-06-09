@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".miaoli_c"
+    tools:showIn="@layout/activity_miaoli_c">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/miaoli_c" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我愛死這個地方了！在熱鬧的三義老街附近，有這麼一個世外桃源的地方 - 山那邊‧綠葉方舟，如同它美麗的名字，放眼望去全被綠色所覆蓋，走在裡頭裡就像身處一個完全的綠色世界。整個園區占地遼闊，有十公頃之大，每一處風景都是經年累月才有的成果，在四十多年前開始，這裡持續了三十年的土地休養、不栽種作物、不使用農藥，種植更多樹木，才成就現今的美麗樣貌。園區入口處有個白色可愛的小拱門，接著一條木棧步道通往園區內部。園區內共有四棟建築，分別用途是紀念品區、廚房、兩間餐廳，為了保護這片森林與居住在這裡的動物們，這些建築物面積占不到園區的千分之五，不僅讓動物擁有更多的休憩空間，也讓活動在這裡的人們能吸取更多新鮮空氣。" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
