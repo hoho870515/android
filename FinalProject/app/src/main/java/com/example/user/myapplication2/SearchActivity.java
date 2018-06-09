@@ -84,7 +84,7 @@ public class SearchActivity extends ListActivity{
 
         spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
             @Override
-            public void onItemSelected(AdapterView adapterView, View view, int position, long id){
+            public void onItemSelected(AdapterView adapterView, View view, final int position, long id){
                 switch(position){
                     case 0:
                         ListView lv_clear = findViewById(android.R.id.list);
@@ -96,8 +96,39 @@ public class SearchActivity extends ListActivity{
                         clear.add(" ");
                         ArrayAdapter<String> arrayAdapterClear = new ArrayAdapter<String>(SearchActivity.this,
                                 android.R.layout.simple_expandable_list_item_1,clear);
-
                         lv_clear.setAdapter(arrayAdapterClear);
+                        lv_clear.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                                switch(i) {
+                                    case 0:
+                                    Intent intent = new Intent();
+                                    intent.setClass(SearchActivity.this, SearchActivity.class);
+                                    startActivity(intent);
+                                    break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        intent1.setClass(SearchActivity.this,SearchActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        intent2.setClass(SearchActivity.this, SearchActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        intent3.setClass(SearchActivity.this, SearchActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        intent4.setClass(SearchActivity.this, SearchActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                            }
+                        });
                         break;
                     case 1:
                         ListView listview = (ListView) findViewById(android.R.id.list);
