@@ -102,29 +102,14 @@ public class SearchActivity extends ListActivity{
                             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                                 switch(i) {
                                     case 0:
-                                    Intent intent = new Intent();
-                                    intent.setClass(SearchActivity.this, SearchActivity.class);
-                                    startActivity(intent);
-                                    break;
+                                        break;
                                     case 1:
-                                        Intent intent1 = new Intent();
-                                        intent1.setClass(SearchActivity.this,SearchActivity.class);
-                                        startActivity(intent1);
                                         break;
                                     case 2:
-                                        Intent intent2 = new Intent();
-                                        intent2.setClass(SearchActivity.this, SearchActivity.class);
-                                        startActivity(intent2);
                                         break;
                                     case 3:
-                                        Intent intent3 = new Intent();
-                                        intent3.setClass(SearchActivity.this, SearchActivity.class);
-                                        startActivity(intent3);
                                         break;
                                     case 4:
-                                        Intent intent4 = new Intent();
-                                        intent4.setClass(SearchActivity.this, SearchActivity.class);
-                                        startActivity(intent4);
                                         break;
                                 }
                             }
