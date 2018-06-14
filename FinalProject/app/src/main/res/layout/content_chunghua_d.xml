@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".chunghua_d"
+    tools:showIn="@layout/activity_chunghua_d">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="331dp"
+            android:layout_height="351dp"
+            app:srcCompat="@drawable/chunghua_d" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全長23公里的埔鹽鄉自行車道，是全縣最具有農村特色的自行車道，沿途經過舊濁水溪及支流，可以看到糯米風味坊、稻香休閒農場等具農村特色的休閒農場，騎乘在這一條路上，經常可以看到滿天飛舞的鷺鷥，這是一條結合生態與產業的自行車道，讓外地人除了來到這裡運動外，也可以進一步了解埔鹽鄉的產業文化。 " />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

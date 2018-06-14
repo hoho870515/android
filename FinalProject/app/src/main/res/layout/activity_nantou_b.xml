@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nantou_b">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="624dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:src="@drawable/nantou_b" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:text="民國38年因國共內戰而退守臺灣的國民政府，定「臺北市」 為臨時首都，直到民國46年省政府遷駐新省政中心—中興新村，中央與地方政府才有了區隔，臺灣省政府遷入中興新村40多年，秉持著中興精神掌理全省各縣市鄉鎮之要務，推動臺灣省之現代化，進而邁向繁榮富裕，同時也見證臺灣過去五十年來邁向民主的歷史過程，具有「行政特區」最主要之省政核心歷史地位。 　　光復之初，臺灣社會百廢待舉，但至88年6月精省前，臺灣省政府在歷任主席樹立良好基礎與規模下，銳意革新精進，不斷研究發展，積極推動政治、經濟、交通、教育、文化、衛生及社會福利等各項基層建設，在在奠立民主憲政的宏規、為國家社會造就大量傑出人才；而且省政府承中央之命，監督地方自治、協調統合跨縣市，具有行政樞紐功能，奠定民眾安和樂利之生活基礎。" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".miaoli_b"
+    tools:showIn="@layout/activity_miaoli_b">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/miaoli_b" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主打料理 中式合菜  餐廳位置 松園會館一樓  服務項目 早餐：大人250元 / 小孩140元 (110CM~140CM) 宴會：4,000元/桌起 包廂：6,000元/桌起 ※ 單點合菜、套餐依餐點定價  訂席專線：037-877213；或撥037-876699分機1138 預約訂席" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

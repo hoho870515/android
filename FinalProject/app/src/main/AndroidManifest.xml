@@ -27,8 +27,98 @@
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".A"
-            android:label="@string/title_activity_a"
+            android:name=".taichung_b"
+            android:label="@string/title_activity_taichung_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_a"
+            android:label="@string/title_activity_taichung_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_c"
+            android:label="@string/title_activity_taichung_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_d"
+            android:label="@string/title_activity_taichung_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".taichung_e"
+            android:label="@string/title_activity_taichung_e"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nantou_a"
+            android:label="@string/title_activity_nantou_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nantou_b"
+            android:label="@string/title_activity_nantou_b" />
+        <activity
+            android:name=".nantou_c"
+            android:label="@string/title_activity_nantou_c" />
+        <activity
+            android:name=".nantou_d"
+            android:label="@string/title_activity_nantou_d" />
+        <activity
+            android:name=".nantou_e"
+            android:label="@string/title_activity_nantou_e" />
+        <activity
+            android:name=".chunghua_a"
+            android:label="@string/title_activity_chunghua_a" />
+        <activity
+            android:name=".chunghua_b"
+            android:label="@string/title_activity_chunghua_b" />
+        <activity
+            android:name=".chunghua_c"
+            android:label="@string/title_activity_chunghua_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chunghua_d"
+            android:label="@string/title_activity_chunghua_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chunghua_e"
+            android:label="@string/title_activity_chunghua_e"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yuniln_a"
+            android:label="@string/title_activity_yuniln_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_b"
+            android:label="@string/title_activity_yunlin_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_c"
+            android:label="@string/title_activity_yunlin_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_d"
+            android:label="@string/title_activity_yunlin_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".yunlin_e"
+            android:label="@string/title_activity_yunlin_e"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_a"
+            android:label="@string/title_activity_miaoli_a"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_b"
+            android:label="@string/title_activity_miaoli_b"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_c"
+            android:label="@string/title_activity_miaoli_c"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_d"
+            android:label="@string/title_activity_miaoli_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".miaoli_e"
+            android:label="@string/title_activity_miaoli_e"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

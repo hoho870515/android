@@ -5,4 +5,5 @@
     <string name="title_activity_door">door</string>
     <string name="title_activity_river">river</string>
     <string name="title_activity_npc">npc</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

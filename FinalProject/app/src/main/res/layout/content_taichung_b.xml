@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".taichung_b"
+    tools:showIn="@layout/activity_taichung_b">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/taichung_b" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dali Art藝術廣場」位於「臺中軟體園區」內，為經濟部之國家級重大建設，規劃以「文化創意」、「文化藝術」作為園區之核心產業，配合國家「創意台灣-文化創意產業發展」計畫，藉以提昇台灣藝術文創產業之國際競爭力，更希望讓「臺中軟體園區」成為亞太地區藝術及文創產業之匯流中心！" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
