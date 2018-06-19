@@ -1,4 +1,4 @@
-package com.example.bonso.txt;
+package com.example.user.myapplication2;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -24,7 +24,7 @@ public class New extends AppCompatActivity {
         setContentView(R.layout.activity_new);
         Spinner placeSpin = findViewById(R.id.placeSpinner);
         final String[] lunch = {"台中市","彰化縣","南投縣","雲林縣","苗栗縣"};
-        ArrayAdapter<String> lunchList = new ArrayAdapter<>(this,R.layout.myspinnertxt,lunch);
+        ArrayAdapter<String> lunchList = new ArrayAdapter<>(this,R.layout.txtspinner,lunch);
         placeSpin.setAdapter(lunchList);
 
         title = (EditText)findViewById(R.id.Title);

@@ -1,4 +1,4 @@
-package com.example.bonso.txt;
+package com.example.user.myapplication2;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,13 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class txtMainActivity extends AppCompatActivity {
 
     ListView lv_notes;
     SQLiteDatabase db;
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_txt_main);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(addnote);
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent();
-            intent.setClass(MainActivity.this,New.class);
+            intent.setClass(txtMainActivity.this,New.class);
             intent.putExtra("NOTEPOS", -1);
             startActivity(intent);
         }
@@ -65,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
     AdapterView.OnItemClickListener iclick = new AdapterView.OnItemClickListener() {
 
         @Override
-        public void onItemClick(AdapterView<?> av, View v,int position, long id) {
+        public void onItemClick(AdapterView<?> av, View v, int position, long id) {
             Intent intent = new Intent();
-            intent.setClass(MainActivity.this,New.class);
+            intent.setClass(txtMainActivity.this,New.class);
             intent.putExtra("NOTEPOS", position);
             startActivity(intent);
         }
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             NoteDB.delNote(db, title);
             titlelist = NoteDB.getTitleList(db);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                    (MainActivity.this,android.R.layout.simple_list_item_1, titlelist);
+                    (txtMainActivity.this,android.R.layout.simple_list_item_1, titlelist);
             lv_notes.setAdapter(adapter);
             return false;
         }
