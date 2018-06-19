@@ -119,9 +119,7 @@
         <activity
             android:name=".miaoli_e"
             android:label="@string/title_activity_miaoli_e"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".txtMainActivity" />
-        <activity android:name=".New"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
