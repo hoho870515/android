@@ -59,10 +59,18 @@ public class IndexActivity extends AppCompatActivity {
                         ClockActivity.class);
                 startActivityForResult(intent,ACTIVITY_CLOCK);
                 break;
+
             case R.id.action_search:
                 Intent intent1 = new Intent();
                 intent1.setClass(IndexActivity.this,SearchActivity.class);
                 startActivity(intent1);
+                break;
+
+            case R.id.action_memo:
+                Intent intent2 = new Intent();
+                intent2.setClass(IndexActivity.this,txtMainActivity.class);
+                startActivity(intent2);
+                break;
         }
 
         return super.onOptionsItemSelected(item);
