@@ -19,14 +19,6 @@ public class IndexActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -59,10 +51,18 @@ public class IndexActivity extends AppCompatActivity {
                         ClockActivity.class);
                 startActivityForResult(intent,ACTIVITY_CLOCK);
                 break;
+
             case R.id.action_search:
                 Intent intent1 = new Intent();
                 intent1.setClass(IndexActivity.this,SearchActivity.class);
                 startActivity(intent1);
+                break;
+
+            case R.id.action_memo:
+                Intent intent2 = new Intent();
+                intent2.setClass(IndexActivity.this,txtMainActivity.class);
+                startActivity(intent2);
+                break;
         }
 
         return super.onOptionsItemSelected(item);
