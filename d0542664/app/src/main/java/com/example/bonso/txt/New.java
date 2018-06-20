@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -17,11 +18,14 @@ public class New extends AppCompatActivity {
     ArrayList<String> titlelist;
     SQLiteDatabase db;
     int notepos;
+    private DatePicker datePicker;
+    int year,month,day;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
+
         Spinner placeSpin = findViewById(R.id.placeSpinner);
         final String[] lunch = {"台中市","彰化縣","南投縣","雲林縣","苗栗縣"};
         ArrayAdapter<String> lunchList = new ArrayAdapter<>(this,R.layout.myspinnertxt,lunch);
@@ -32,6 +36,11 @@ public class New extends AppCompatActivity {
 
         Intent intent = getIntent();
         notepos = intent.getIntExtra("NOTEPOS", -1);
+
+        datePicker = (DatePicker) findViewById(R.id.date);
+        year = datePicker.getYear();
+        month = datePicker.getMonth();
+        day = datePicker.getDayOfMonth();
     }
 
     @Override
@@ -46,6 +55,7 @@ public class New extends AppCompatActivity {
             String printfTitle = titlelist.get(notepos);
             title.setText(printfTitle);
             note.setText(NoteDB.getBody(db,printfTitle));
+            datePicker.updateDate(NoteDB.getDBYear(db,printfTitle),NoteDB.getDBMonth(db,printfTitle),NoteDB.getDBDay(db,printfTitle));
         } else {
             title.setText("");
             note.setText("");
@@ -59,8 +69,7 @@ public class New extends AppCompatActivity {
         if (printfTitle.length() == 0) {
             Toast.makeText(this, "標題不能為空白，便條無儲存", Toast.LENGTH_SHORT).show();
         } else {
-            NoteDB.addNote(db, title.getText().toString(),
-                    note.getText().toString());
+            NoteDB.addNote(db, title.getText().toString(),note.getText().toString(),year,month,day);
         }
     }
 

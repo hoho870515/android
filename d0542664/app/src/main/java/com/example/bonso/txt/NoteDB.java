@@ -1,8 +1,11 @@
 package com.example.bonso.txt;
 
+import android.app.AlertDialog;
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.DatePicker;
 
 import java.util.ArrayList;
 
@@ -30,7 +33,23 @@ public class NoteDB {
         return c.getString(c.getColumnIndex("body"));
     }
 
-    static void addNote(SQLiteDatabase db,String title, String body) {
+    static int getDBYear(SQLiteDatabase db, String title) {
+        Cursor c = db.rawQuery("select * from " + NOTETABLE + " where title='" + title +"';", null);
+        c.moveToFirst();
+        return c.getColumnIndex("year");
+    }
+    static int getDBMonth(SQLiteDatabase db, String title) {
+        Cursor c = db.rawQuery("select * from " + NOTETABLE + " where title='" + title +"';", null);
+        c.moveToFirst();
+        return c.getColumnIndex("month");
+    }
+    static int getDBDay(SQLiteDatabase db, String title) {
+        Cursor c = db.rawQuery("select * from " + NOTETABLE + " where title='" + title +"';", null);
+        c.moveToFirst();
+        return c.getColumnIndex("day");
+    }
+
+    static void addNote(SQLiteDatabase db,String title,String body,int year,int month,int day) {
 
         ArrayList<String> titlelist = getTitleList(db);
         boolean isNew = true;
@@ -44,6 +63,10 @@ public class NoteDB {
         ContentValues cv = new ContentValues();
         cv.put("title", title);
         cv.put("body", body);
+        cv.put("year",year);
+        cv.put("month",month);
+        cv.put("day",day);
+
 
         if (isNew == true) {
             db.insert(NOTETABLE, null, cv);

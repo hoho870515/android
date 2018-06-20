@@ -11,7 +11,7 @@ public class DBOpenHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + NoteDB.NOTETABLE + "(title, body);");
+        db.execSQL("create table " + NoteDB.NOTETABLE + "(title, body, year, month, day);");
     }
 
     @Override
