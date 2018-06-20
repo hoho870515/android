@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="448dp"
-        android:layout_height="792dp"
-        app:srcCompat="@drawable/sky2" />
+        android:id="@+id/base"
+        android:layout_width="472dp"
+        android:layout_height="835dp"
+        android:layout_marginBottom="200dp"
+        app:srcCompat="@drawable/green2" />
+
+    <ImageView
+        android:id="@+id/sqirral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/squirral_resized" />
+
+    <ImageView
+        android:id="@+id/soccer"
+        android:layout_width="133dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        app:srcCompat="@drawable/soccer" />
+
+    <Button
+        android:id="@+id/button＿gohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="420dp"
+        android:text="返回首頁" />
 
     <AnalogClock
         android:id="@+id/alClock"
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="160dp"
         android:dial="@drawable/clock2_resized" />
 
     <DigitalClock
@@ -26,6 +51,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="120dp"
         android:layout_marginTop="50dp"
-        android:textColor="?android:attr/textColorHintInverse"
+        android:textColor="?android:attr/textColorSecondaryInverse"
         android:textSize="50sp" />
+
 </FrameLayout>
