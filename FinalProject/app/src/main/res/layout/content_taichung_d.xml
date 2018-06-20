@@ -27,4 +27,5 @@
             android:layout_height="wrap_content"
             android:text="坐落於草悟道的大型裝置藝術─阿薩斯雕像，是美商暴雪娛樂公司 (Blizzard Entertainment)於亞洲唯一的青銅雕像，由好萊塢知名台裔藝術家Steve Wang 所帶領的30人團隊，耗時上千小時（逾9個月）完成。台中市地處台灣中部，擁有交通便捷優勢，近年更蓬勃發展國際觀光；阿薩斯雕像落腳於草悟道及美術館區域的人文藝術氛圍，更為此區創造連貫性藝文社區形象與獨一無二的文化地標。" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

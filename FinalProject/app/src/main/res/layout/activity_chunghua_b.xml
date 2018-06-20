@@ -25,4 +25,5 @@
             android:layout_height="wrap_content"
             android:text="北斗鎮公所在民國八十三年起，決定整治舊濁水溪，並使之成為美麗的河濱公園。公園的範圍由舊濁水溪河道上的七星橋至北斗橋兩側，地形狹長。" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

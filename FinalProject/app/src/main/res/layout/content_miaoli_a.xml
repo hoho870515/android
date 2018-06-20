@@ -27,4 +27,5 @@
             android:layout_height="wrap_content"
             android:text="甘露蔬食餐廳的特色：(引用自 迴鄉驛站網站) 食材來源：90%以上選用在地當季有機食材， 以復育生態環境，並推動照顧小農的合作經濟。  傳統調味料：以本土契作農場生產的自製油品，與傳統古法釀製的醬油、醋品為主， 香氣滿溢、品質新鮮且無添加，讓人食在安心。 " />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

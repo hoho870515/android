@@ -1,8 +1,10 @@
 package com.example.user.myapplication2;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -75,12 +77,26 @@ public class txtMainActivity extends AppCompatActivity {
         @Override
         public boolean onItemLongClick(AdapterView<?> av, View v,
                                        int position, long id) {
-            String title = titlelist.get(position);
-            NoteDB.delNote(db, title);
-            titlelist = NoteDB.getTitleList(db);
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                    (txtMainActivity.this,android.R.layout.simple_list_item_1, titlelist);
-            lv_notes.setAdapter(adapter);
+            final String title = titlelist.get(position);
+            new AlertDialog.Builder(txtMainActivity.this)
+                    .setMessage("確定要刪除 " + title + " ?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            NoteDB.delNote(db, title);
+                            titlelist = NoteDB.getTitleList(db);
+                            ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                                    (txtMainActivity.this,android.R.layout.simple_list_item_1, titlelist);
+                            lv_notes.setAdapter(adapter);
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    })
+                    .show();
+
             return false;
         }
 

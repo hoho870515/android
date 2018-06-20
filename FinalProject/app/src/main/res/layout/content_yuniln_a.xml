@@ -27,4 +27,6 @@
             android:layout_height="wrap_content"
             android:text="汎歌保養品科技美學舘，是依照GMP標準建造的保 養品製造工廠。擁有除工研院外全台唯一美製奈米 機，全廠力求eco- friendly，關懷台灣環境不遺餘 力。參觀過程中可透過專業導覽解說及文物室展 覽、體驗室試用產品，深入了解保養品的製造過 程、汎歌的製造優勢及頂級美粧技術背後蘊含的社 會人文關懷。" />
     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

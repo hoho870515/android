@@ -25,4 +25,5 @@
             android:layout_height="wrap_content"
             android:text="沿途路旁種植小葉欖仁樹、波斯菊花海、向日葵花海、葡萄園、楓樹並構築油畫彩繪牆，有蜜紅葡萄、寶島蜜拔、金蜜芒果彩繪三蜜農特產等，是一條兼具運動、休閒、旅遊、體驗功能之自行車道。 " />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

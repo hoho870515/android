@@ -27,4 +27,6 @@
             android:layout_height="wrap_content"
             android:text="全長23公里的埔鹽鄉自行車道，是全縣最具有農村特色的自行車道，沿途經過舊濁水溪及支流，可以看到糯米風味坊、稻香休閒農場等具農村特色的休閒農場，騎乘在這一條路上，經常可以看到滿天飛舞的鷺鷥，這是一條結合生態與產業的自行車道，讓外地人除了來到這裡運動外，也可以進一步了解埔鹽鄉的產業文化。 " />
     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

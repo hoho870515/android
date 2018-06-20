@@ -27,4 +27,5 @@
             android:layout_height="wrap_content"
             android:text="車道沿途會經過二水火車站、台灣獼猴生態教育館、八堡圳源頭、林先生廟和源泉車站等景點，隨著季節盛開的波斯菊、小油菊、向日葵等，將沿途景色點綴得萬紫千紅，相當適合全家大小一起來享受踩踏在原野的樂趣。" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

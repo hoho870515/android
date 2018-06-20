@@ -27,4 +27,5 @@
             android:layout_height="wrap_content"
             android:text="主打料理 中式合菜  餐廳位置 松園會館一樓  服務項目 早餐：大人250元 / 小孩140元 (110CM~140CM) 宴會：4,000元/桌起 包廂：6,000元/桌起 ※ 單點合菜、套餐依餐點定價  訂席專線：037-877213；或撥037-876699分機1138 預約訂席" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

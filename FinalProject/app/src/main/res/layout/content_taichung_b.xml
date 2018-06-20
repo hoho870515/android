@@ -28,4 +28,6 @@
             android:layout_height="wrap_content"
             android:text="Dali Art藝術廣場」位於「臺中軟體園區」內，為經濟部之國家級重大建設，規劃以「文化創意」、「文化藝術」作為園區之核心產業，配合國家「創意台灣-文化創意產業發展」計畫，藉以提昇台灣藝術文創產業之國際競爭力，更希望讓「臺中軟體園區」成為亞太地區藝術及文創產業之匯流中心！" />
     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>
