@@ -36,6 +36,9 @@ public class SearchActivity extends ListActivity{
 
     private DataArrayAdapter adapter = null;
 
+    String Px[] = new String[5];
+    String Py[] = new String[5];
+
     private static final int LIST_DATAS = 1;
 
     private Handler handler = new Handler() {
@@ -43,6 +46,10 @@ public class SearchActivity extends ListActivity{
             switch (msg.what) {
                 case LIST_DATAS: {
                     List<TData> datas = (List<TData>) msg.obj;
+                    for(int i=0; i< datas.size();i++){
+                        Px[i] = datas.get(i).getPx();
+                        Py[i] = datas.get(i).getPy();
+                    }
                     refreshList(datas);
                     break;
                 }
@@ -114,6 +121,24 @@ public class SearchActivity extends ListActivity{
                                 }
                             }
                         });
+                        lv_clear.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int i, long id) {
+                                switch(i) {
+                                    case 0:
+                                        break;
+                                    case 1:
+                                        break;
+                                    case 2:
+                                        break;
+                                    case 3:
+                                        break;
+                                    case 4:
+                                        break;
+                                }
+                                return false;
+                            }
+                        });
                         break;
                     case 1:
                         ListView listview = (ListView) findViewById(android.R.id.list);
@@ -152,6 +177,59 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
+                            }
+                        });
+                        listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position){
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        String px = Px[position];
+                                        String py = Py[position];
+                                        intent.putExtra("Px",px);
+                                        intent.putExtra("Py",py);
+                                        intent.setClass(SearchActivity.this,MapsActivity.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        String px1 = Px[position];
+                                        String py1 = Py[position];
+                                        intent1.putExtra("Px",px1);
+                                        intent1.putExtra("Py",py1);
+                                        intent1.setClass(SearchActivity.this,MapsActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        String px2 = Px[position];
+                                        String py2 = Py[position];
+                                        intent2.putExtra("Px",px2);
+                                        intent2.putExtra("Py",py2);
+                                        intent2.setClass(SearchActivity.this,MapsActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        String px3 = Px[position];
+                                        String py3 = Py[position];
+                                        intent3.putExtra("Px",px3);
+                                        intent3.putExtra("Py",py3);
+                                        intent3.setClass(SearchActivity.this,MapsActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        String px4 = Px[position];
+                                        String py4 = Py[position];
+                                        intent4.putExtra("Px",px4);
+                                        intent4.putExtra("Py",py4);
+                                        intent4.setClass(SearchActivity.this,MapsActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                                return false;
                             }
                         });
                         break;
@@ -195,7 +273,59 @@ public class SearchActivity extends ListActivity{
                                 }
                             }
                         });
-
+                        listview1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position) {
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        String px = Px[position];
+                                        String py = Py[position];
+                                        intent.putExtra("Px", px);
+                                        intent.putExtra("Py", py);
+                                        intent.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        String px1 = Px[position];
+                                        String py1 = Py[position];
+                                        intent1.putExtra("Px", px1);
+                                        intent1.putExtra("Py", py1);
+                                        intent1.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        String px2 = Px[position];
+                                        String py2 = Py[position];
+                                        intent2.putExtra("Px", px2);
+                                        intent2.putExtra("Py", py2);
+                                        intent2.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        String px3 = Px[position];
+                                        String py3 = Py[position];
+                                        intent3.putExtra("Px", px3);
+                                        intent3.putExtra("Py", py3);
+                                        intent3.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        String px4 = Px[position];
+                                        String py4 = Py[position];
+                                        intent4.putExtra("Px", px4);
+                                        intent4.putExtra("Py", py4);
+                                        intent4.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                                return false;
+                            }
+                        });
                         break;
                     case 3:
                         ListView listview2 = (ListView) findViewById(android.R.id.list);
@@ -234,6 +364,59 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
+                            }
+                        });
+                        listview2.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position) {
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        String px = Px[position];
+                                        String py = Py[position];
+                                        intent.putExtra("Px", px);
+                                        intent.putExtra("Py", py);
+                                        intent.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        String px1 = Px[position];
+                                        String py1 = Py[position];
+                                        intent1.putExtra("Px", px1);
+                                        intent1.putExtra("Py", py1);
+                                        intent1.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        String px2 = Px[position];
+                                        String py2 = Py[position];
+                                        intent2.putExtra("Px", px2);
+                                        intent2.putExtra("Py", py2);
+                                        intent2.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        String px3 = Px[position];
+                                        String py3 = Py[position];
+                                        intent3.putExtra("Px", px3);
+                                        intent3.putExtra("Py", py3);
+                                        intent3.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        String px4 = Px[position];
+                                        String py4 = Py[position];
+                                        intent4.putExtra("Px", px4);
+                                        intent4.putExtra("Py", py4);
+                                        intent4.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                                return false;
                             }
                         });
                         break;
@@ -277,6 +460,59 @@ public class SearchActivity extends ListActivity{
                                 }
                             }
                         });
+                        listview3.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position) {
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        String px = Px[position];
+                                        String py = Py[position];
+                                        intent.putExtra("Px", px);
+                                        intent.putExtra("Py", py);
+                                        intent.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        String px1 = Px[position];
+                                        String py1 = Py[position];
+                                        intent1.putExtra("Px", px1);
+                                        intent1.putExtra("Py", py1);
+                                        intent1.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        String px2 = Px[position];
+                                        String py2 = Py[position];
+                                        intent2.putExtra("Px", px2);
+                                        intent2.putExtra("Py", py2);
+                                        intent2.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        String px3 = Px[position];
+                                        String py3 = Py[position];
+                                        intent3.putExtra("Px", px3);
+                                        intent3.putExtra("Py", py3);
+                                        intent3.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        String px4 = Px[position];
+                                        String py4 = Py[position];
+                                        intent4.putExtra("Px", px4);
+                                        intent4.putExtra("Py", py4);
+                                        intent4.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                                return false;
+                            }
+                        });
                         break;
                     case 5:
                         ListView listview4 = (ListView) findViewById(android.R.id.list);
@@ -317,6 +553,59 @@ public class SearchActivity extends ListActivity{
                                 }
                             }
                         });
+                        listview4.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                            @Override
+                            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                                switch (position) {
+                                    case 0:
+                                        Intent intent = new Intent();
+                                        String px = Px[position];
+                                        String py = Py[position];
+                                        intent.putExtra("Px", px);
+                                        intent.putExtra("Py", py);
+                                        intent.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent);
+                                        break;
+                                    case 1:
+                                        Intent intent1 = new Intent();
+                                        String px1 = Px[position];
+                                        String py1 = Py[position];
+                                        intent1.putExtra("Px", px1);
+                                        intent1.putExtra("Py", py1);
+                                        intent1.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent1);
+                                        break;
+                                    case 2:
+                                        Intent intent2 = new Intent();
+                                        String px2 = Px[position];
+                                        String py2 = Py[position];
+                                        intent2.putExtra("Px", px2);
+                                        intent2.putExtra("Py", py2);
+                                        intent2.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent2);
+                                        break;
+                                    case 3:
+                                        Intent intent3 = new Intent();
+                                        String px3 = Px[position];
+                                        String py3 = Py[position];
+                                        intent3.putExtra("Px", px3);
+                                        intent3.putExtra("Py", py3);
+                                        intent3.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent3);
+                                        break;
+                                    case 4:
+                                        Intent intent4 = new Intent();
+                                        String px4 = Px[position];
+                                        String py4 = Py[position];
+                                        intent4.putExtra("Px", px4);
+                                        intent4.putExtra("Py", py4);
+                                        intent4.setClass(SearchActivity.this, MapsActivity.class);
+                                        startActivity(intent4);
+                                        break;
+                                }
+                                return false;
+                            }
+                        });
                         break;
                 }
 
@@ -341,14 +630,20 @@ public class SearchActivity extends ListActivity{
             for (DataSnapshot ds : dataSnapshot.getChildren()) {
                 DataSnapshot dsName = ds.child("Name");
                 DataSnapshot dsAddress = ds.child("Add");
+                DataSnapshot dsPx = ds.child("px");
+                DataSnapshot dsPy = ds.child("py");
 
                 String tname = (String) dsName.getValue();
                 String taddress = (String) dsAddress.getValue();
+                String Px = (String) dsPx.getValue();
+                String Py = (String) dsPy.getValue();
                 Log.v("TEST", tname + ";" + taddress);
 
                 TData data = new TData();
                 data.setAddress(taddress);
                 data.setName(tname);
+                data.setPx(Px);
+                data.setPy(Py);
                 lsHotels.add(data);
             }
             Message msg = new Message();
@@ -401,6 +696,8 @@ public class SearchActivity extends ListActivity{
     class TData{
         String name;
         String address;
+        String Px;
+        String Py;
 
         public String getName() {
             return name;
@@ -416,6 +713,22 @@ public class SearchActivity extends ListActivity{
 
         public void setAddress(String address) {
             this.address = address;
+        }
+
+        public String getPx() {
+            return Px;
+        }
+
+        public void setPx(String px) {
+            Px = px;
+        }
+
+        public String getPy() {
+            return Py;
+        }
+
+        public void setPy(String py) {
+            Py = py;
         }
     }
 }
