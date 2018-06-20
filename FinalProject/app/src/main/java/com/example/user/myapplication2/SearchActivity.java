@@ -229,7 +229,7 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
-                                return false;
+                                return true;
                             }
                         });
                         break;
@@ -323,7 +323,7 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
-                                return false;
+                                return true;
                             }
                         });
                         break;
@@ -416,7 +416,7 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
-                                return false;
+                                return true;
                             }
                         });
                         break;
@@ -510,7 +510,7 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
-                                return false;
+                                return true;
                             }
                         });
                         break;
@@ -603,7 +603,7 @@ public class SearchActivity extends ListActivity{
                                         startActivity(intent4);
                                         break;
                                 }
-                                return false;
+                                return true;
                             }
                         });
                         break;
